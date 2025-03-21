@@ -81,7 +81,7 @@ CK_DIR = f'{bd_dir}/ck'
 def validate_and_update_archs():
     archs = os.getenv("GPU_ARCHS", "native").split(";")
     # List of allowed architectures
-    allowed_archs = ["native", "gfx90a",
+    allowed_archs = ["native", "gfx908", "gfx90a",
                      "gfx940", "gfx941", "gfx942", "gfx1100"]
 
     # Validate if each element in archs is in allowed_archs
